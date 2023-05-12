@@ -1,27 +1,46 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --accentColor: #085b68;
+  --backgroundColor: #f8f8f8;
+  --textColor: #080808;
+  --hoverColor: skyblue;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
+html,
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  margin: 0;
+  padding: 0;
+  font-size: 1rem;
+}
+
+h1 {
+  text-align: center;
+  font-size: 3rem;
+  letter-spacing: 0.5rem;
+  color: var(--textColor);
+}
+
+nav {
+  border-top: 1px solid var(--textColor);
+  border-bottom: 1px solid var(--textColor);
+  width: 75%;
+  margin: auto;
+  padding: 8px 0;
+  display: flex;
+  justify-content: space-between;
+  column-gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+a {
+  text-decoration: none;
+  color: var(--accentColor);
+}
+
+a:hover {
+  color: var(--hoverColor);
+  text-decoration: underline;
+}
+
+footer {
+  text-align: center;
 }
