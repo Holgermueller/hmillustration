@@ -41,6 +41,21 @@ a:hover {
   text-decoration: underline;
 }
 
+.home,
+.about,
+.contact {
+  width: 85%;
+  margin: auto;
+}
+
+.link-container {
+  margin-bottom: 2%;
+}
+
+.social-links-page {
+  margin-bottom: 5%;
+}
+
 footer {
   text-align: center;
 }
