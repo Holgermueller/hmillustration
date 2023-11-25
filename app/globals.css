@@ -43,6 +43,7 @@ a:hover {
 
 .home,
 .about,
+.archives,
 .contact {
   width: 85%;
   margin: auto;
@@ -58,4 +59,9 @@ a:hover {
 
 footer {
   text-align: center;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  padding: 4px 0;
 }
